@@ -6,7 +6,7 @@ node {
     sh "mvn clean verify sonar:sonar -Dsonar.projectKey=DeployBack"
     /*def mvn = tool 'Default Maven';
     withSonarQubeEnv() {
-      sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=DeployBack"
+      powershell "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=DeployBack"
     }*/
   }
 }
