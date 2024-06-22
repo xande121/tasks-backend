@@ -41,7 +41,7 @@ pipeline {
         }
       }
     }
-    stage ('Deploy Backend'){
+    stage ('Deploy Frontend'){
       steps{
         dir('frontend'){
           git credentialsId: 'LoginGit', url: 'https://github.com/xande121/tasks-frontend'
